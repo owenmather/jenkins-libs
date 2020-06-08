@@ -7,6 +7,7 @@ def call(int buildNumber) {
                 stage('Even Stage') {
                     steps {
                         echo "The build number is even"
+                        upload()
                     }
                 }
             }
@@ -18,6 +19,7 @@ def call(int buildNumber) {
                 stage('Odd Stage') {
                     steps {
                         echo "The build number is odd"
+                        upload()
                     }
                 }
             }
